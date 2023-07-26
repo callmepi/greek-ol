@@ -1,0 +1,228 @@
+/*!
+ * ol classes for greek numbering lists
+ *
+ * dot suffixed (_gre_)  and
+ * close-parenthesis suffixed (_gre-p_)
+ *
+ * Suports lists up to 100 items
+ *
+ * Copyleft : 2023 Geo Halkiadakis <gx23100@gmail.com>
+ * Licensed under Apache 2.0 (https://github.com/callmepi/greek-ol/blob/main/LICENSE)
+ */
+
+ol._gre_
+ol._gre-p_ {
+    list-style-type: none;
+}
+ol._gre_ li:before
+ol._gre-p_ li:before {
+    display: inline-block;
+    margin-left: 0;
+    width: 32px;
+}
+
+/** greek 1-100 dot suffixed
+ */
+ol._gre_ li:nth-child(1):before { content: "α. "; }
+ol._gre_ li:nth-child(2):before { content: "β. "; }
+ol._gre_ li:nth-child(3):before { content: "γ. "; }
+ol._gre_ li:nth-child(4):before { content: "δ. "; }
+ol._gre_ li:nth-child(5):before { content: "ε. "; }
+ol._gre_ li:nth-child(6):before { content: "στ. "; }
+ol._gre_ li:nth-child(7):before { content: "ζ. "; }
+ol._gre_ li:nth-child(8):before { content: "η. "; }
+ol._gre_ li:nth-child(9):before { content: "θ. "; }
+ol._gre_ li:nth-child(10):before { content: "ι. "; }
+ol._gre_ li:nth-child(11):before { content: "ια. "; }
+ol._gre_ li:nth-child(12):before { content: "ιβ. "; }
+ol._gre_ li:nth-child(13):before { content: "ιγ. "; }
+ol._gre_ li:nth-child(14):before { content: "ιδ. "; }
+ol._gre_ li:nth-child(15):before { content: "ιε. "; }
+ol._gre_ li:nth-child(16):before { content: "ιστ. "; }
+ol._gre_ li:nth-child(17):before { content: "ιζ. "; }
+ol._gre_ li:nth-child(18):before { content: "ιη. "; }
+ol._gre_ li:nth-child(19):before { content: "ιθ. "; }
+ol._gre_ li:nth-child(20):before { content: "κ. "; }
+ol._gre_ li:nth-child(21):before { content: "κα. "; }
+ol._gre_ li:nth-child(22):before { content: "κβ. "; }
+ol._gre_ li:nth-child(23):before { content: "κγ. "; }
+ol._gre_ li:nth-child(24):before { content: "κδ. "; }
+ol._gre_ li:nth-child(25):before { content: "κε. "; }
+ol._gre_ li:nth-child(26):before { content: "κστ. "; }
+ol._gre_ li:nth-child(27):before { content: "κζ. "; }
+ol._gre_ li:nth-child(28):before { content: "κη. "; }
+ol._gre_ li:nth-child(29):before { content: "κθ. "; }
+ol._gre_ li:nth-child(30):before { content: "λ. "; }
+ol._gre_ li:nth-child(31):before { content: "λα. "; }
+ol._gre_ li:nth-child(32):before { content: "λβ. "; }
+ol._gre_ li:nth-child(33):before { content: "λγ. "; }
+ol._gre_ li:nth-child(34):before { content: "λδ. "; }
+ol._gre_ li:nth-child(35):before { content: "λε. "; }
+ol._gre_ li:nth-child(36):before { content: "λστ. "; }
+ol._gre_ li:nth-child(37):before { content: "λζ. "; }
+ol._gre_ li:nth-child(38):before { content: "λη. "; }
+ol._gre_ li:nth-child(39):before { content: "λθ. "; }
+ol._gre_ li:nth-child(40):before { content: "μ. "; }
+ol._gre_ li:nth-child(41):before { content: "μα. "; }
+ol._gre_ li:nth-child(42):before { content: "μβ. "; }
+ol._gre_ li:nth-child(43):before { content: "μγ. "; }
+ol._gre_ li:nth-child(44):before { content: "μδ. "; }
+ol._gre_ li:nth-child(45):before { content: "με. "; }
+ol._gre_ li:nth-child(46):before { content: "μστ. "; }
+ol._gre_ li:nth-child(47):before { content: "μζ. "; }
+ol._gre_ li:nth-child(48):before { content: "μη. "; }
+ol._gre_ li:nth-child(49):before { content: "μθ. "; }
+ol._gre_ li:nth-child(50):before { content: "ν. "; }
+ol._gre_ li:nth-child(51):before { content: "να. "; }
+ol._gre_ li:nth-child(52):before { content: "νβ. "; }
+ol._gre_ li:nth-child(53):before { content: "νγ. "; }
+ol._gre_ li:nth-child(54):before { content: "νδ. "; }
+ol._gre_ li:nth-child(55):before { content: "νε. "; }
+ol._gre_ li:nth-child(56):before { content: "νστ. "; }
+ol._gre_ li:nth-child(57):before { content: "νζ. "; }
+ol._gre_ li:nth-child(58):before { content: "νη. "; }
+ol._gre_ li:nth-child(59):before { content: "νθ. "; }
+ol._gre_ li:nth-child(60):before { content: "ξ. "; }
+ol._gre_ li:nth-child(61):before { content: "ξα. "; }
+ol._gre_ li:nth-child(62):before { content: "ξβ. "; }
+ol._gre_ li:nth-child(63):before { content: "ξγ. "; }
+ol._gre_ li:nth-child(64):before { content: "ξδ. "; }
+ol._gre_ li:nth-child(65):before { content: "ξε. "; }
+ol._gre_ li:nth-child(66):before { content: "ξστ. "; }
+ol._gre_ li:nth-child(67):before { content: "ξζ. "; }
+ol._gre_ li:nth-child(68):before { content: "ξη. "; }
+ol._gre_ li:nth-child(69):before { content: "ξθ. "; }
+ol._gre_ li:nth-child(70):before { content: "ο. "; }
+ol._gre_ li:nth-child(71):before { content: "οα. "; }
+ol._gre_ li:nth-child(72):before { content: "οβ. "; }
+ol._gre_ li:nth-child(73):before { content: "ογ. "; }
+ol._gre_ li:nth-child(74):before { content: "οδ. "; }
+ol._gre_ li:nth-child(75):before { content: "οε. "; }
+ol._gre_ li:nth-child(76):before { content: "οστ. "; }
+ol._gre_ li:nth-child(77):before { content: "οζ. "; }
+ol._gre_ li:nth-child(78):before { content: "οη. "; }
+ol._gre_ li:nth-child(79):before { content: "οθ. "; }
+ol._gre_ li:nth-child(80):before { content: "π. "; }
+ol._gre_ li:nth-child(81):before { content: "πα. "; }
+ol._gre_ li:nth-child(82):before { content: "πβ. "; }
+ol._gre_ li:nth-child(83):before { content: "πγ. "; }
+ol._gre_ li:nth-child(84):before { content: "πδ. "; }
+ol._gre_ li:nth-child(85):before { content: "πε. "; }
+ol._gre_ li:nth-child(86):before { content: "πστ. "; }
+ol._gre_ li:nth-child(87):before { content: "πζ. "; }
+ol._gre_ li:nth-child(88):before { content: "πη. "; }
+ol._gre_ li:nth-child(89):before { content: "πθ. "; }
+ol._gre_ li:nth-child(90):before { content: "ρ. "; }
+ol._gre_ li:nth-child(91):before { content: "ρα. "; }
+ol._gre_ li:nth-child(92):before { content: "ρβ. "; }
+ol._gre_ li:nth-child(93):before { content: "ργ. "; }
+ol._gre_ li:nth-child(94):before { content: "ρδ. "; }
+ol._gre_ li:nth-child(95):before { content: "ρε. "; }
+ol._gre_ li:nth-child(96):before { content: "ρστ. "; }
+ol._gre_ li:nth-child(97):before { content: "ρζ. "; }
+ol._gre_ li:nth-child(98):before { content: "ρη. "; }
+ol._gre_ li:nth-child(99):before { content: "ρθ. "; }
+ol._gre_ li:nth-child(100):before { content: "σ. "; }
+
+/** greek 1-100 close-parentesis suffixed
+ */
+ol._gre-p_ li:nth-child(1):before { content: "α) "; }
+ol._gre-p_ li:nth-child(2):before { content: "β) "; }
+ol._gre-p_ li:nth-child(3):before { content: "γ) "; }
+ol._gre-p_ li:nth-child(4):before { content: "δ) "; }
+ol._gre-p_ li:nth-child(5):before { content: "ε) "; }
+ol._gre-p_ li:nth-child(6):before { content: "στ) "; }
+ol._gre-p_ li:nth-child(7):before { content: "ζ) "; }
+ol._gre-p_ li:nth-child(8):before { content: "η) "; }
+ol._gre-p_ li:nth-child(9):before { content: "θ) "; }
+ol._gre-p_ li:nth-child(10):before { content: "ι) "; }
+ol._gre-p_ li:nth-child(11):before { content: "ια) "; }
+ol._gre-p_ li:nth-child(12):before { content: "ιβ) "; }
+ol._gre-p_ li:nth-child(13):before { content: "ιγ) "; }
+ol._gre-p_ li:nth-child(14):before { content: "ιδ) "; }
+ol._gre-p_ li:nth-child(15):before { content: "ιε) "; }
+ol._gre-p_ li:nth-child(16):before { content: "ιστ) "; }
+ol._gre-p_ li:nth-child(17):before { content: "ιζ) "; }
+ol._gre-p_ li:nth-child(18):before { content: "ιη) "; }
+ol._gre-p_ li:nth-child(19):before { content: "ιθ) "; }
+ol._gre-p_ li:nth-child(20):before { content: "κ) "; }
+ol._gre-p_ li:nth-child(21):before { content: "κα) "; }
+ol._gre-p_ li:nth-child(22):before { content: "κβ) "; }
+ol._gre-p_ li:nth-child(23):before { content: "κγ) "; }
+ol._gre-p_ li:nth-child(24):before { content: "κδ) "; }
+ol._gre-p_ li:nth-child(25):before { content: "κε) "; }
+ol._gre-p_ li:nth-child(26):before { content: "κστ) "; }
+ol._gre-p_ li:nth-child(27):before { content: "κζ) "; }
+ol._gre-p_ li:nth-child(28):before { content: "κη) "; }
+ol._gre-p_ li:nth-child(29):before { content: "κθ) "; }
+ol._gre-p_ li:nth-child(30):before { content: "λ) "; }
+ol._gre-p_ li:nth-child(31):before { content: "λα) "; }
+ol._gre-p_ li:nth-child(32):before { content: "λβ) "; }
+ol._gre-p_ li:nth-child(33):before { content: "λγ) "; }
+ol._gre-p_ li:nth-child(34):before { content: "λδ) "; }
+ol._gre-p_ li:nth-child(35):before { content: "λε) "; }
+ol._gre-p_ li:nth-child(36):before { content: "λστ) "; }
+ol._gre-p_ li:nth-child(37):before { content: "λζ) "; }
+ol._gre-p_ li:nth-child(38):before { content: "λη) "; }
+ol._gre-p_ li:nth-child(39):before { content: "λθ) "; }
+ol._gre-p_ li:nth-child(40):before { content: "μ) "; }
+ol._gre-p_ li:nth-child(41):before { content: "μα) "; }
+ol._gre-p_ li:nth-child(42):before { content: "μβ) "; }
+ol._gre-p_ li:nth-child(43):before { content: "μγ) "; }
+ol._gre-p_ li:nth-child(44):before { content: "μδ) "; }
+ol._gre-p_ li:nth-child(45):before { content: "με) "; }
+ol._gre-p_ li:nth-child(46):before { content: "μστ) "; }
+ol._gre-p_ li:nth-child(47):before { content: "μζ) "; }
+ol._gre-p_ li:nth-child(48):before { content: "μη) "; }
+ol._gre-p_ li:nth-child(49):before { content: "μθ) "; }
+ol._gre-p_ li:nth-child(50):before { content: "ν) "; }
+ol._gre-p_ li:nth-child(51):before { content: "να) "; }
+ol._gre-p_ li:nth-child(52):before { content: "νβ) "; }
+ol._gre-p_ li:nth-child(53):before { content: "νγ) "; }
+ol._gre-p_ li:nth-child(54):before { content: "νδ) "; }
+ol._gre-p_ li:nth-child(55):before { content: "νε) "; }
+ol._gre-p_ li:nth-child(56):before { content: "νστ) "; }
+ol._gre-p_ li:nth-child(57):before { content: "νζ) "; }
+ol._gre-p_ li:nth-child(58):before { content: "νη) "; }
+ol._gre-p_ li:nth-child(59):before { content: "νθ) "; }
+ol._gre-p_ li:nth-child(60):before { content: "ξ) "; }
+ol._gre-p_ li:nth-child(61):before { content: "ξα) "; }
+ol._gre-p_ li:nth-child(62):before { content: "ξβ) "; }
+ol._gre-p_ li:nth-child(63):before { content: "ξγ) "; }
+ol._gre-p_ li:nth-child(64):before { content: "ξδ) "; }
+ol._gre-p_ li:nth-child(65):before { content: "ξε) "; }
+ol._gre-p_ li:nth-child(66):before { content: "ξστ) "; }
+ol._gre-p_ li:nth-child(67):before { content: "ξζ) "; }
+ol._gre-p_ li:nth-child(68):before { content: "ξη) "; }
+ol._gre-p_ li:nth-child(69):before { content: "ξθ) "; }
+ol._gre-p_ li:nth-child(70):before { content: "ο) "; }
+ol._gre-p_ li:nth-child(71):before { content: "οα) "; }
+ol._gre-p_ li:nth-child(72):before { content: "οβ) "; }
+ol._gre-p_ li:nth-child(73):before { content: "ογ) "; }
+ol._gre-p_ li:nth-child(74):before { content: "οδ) "; }
+ol._gre-p_ li:nth-child(75):before { content: "οε) "; }
+ol._gre-p_ li:nth-child(76):before { content: "οστ) "; }
+ol._gre-p_ li:nth-child(77):before { content: "οζ) "; }
+ol._gre-p_ li:nth-child(78):before { content: "οη) "; }
+ol._gre-p_ li:nth-child(79):before { content: "οθ) "; }
+ol._gre-p_ li:nth-child(80):before { content: "π) "; }
+ol._gre-p_ li:nth-child(81):before { content: "πα) "; }
+ol._gre-p_ li:nth-child(82):before { content: "πβ) "; }
+ol._gre-p_ li:nth-child(83):before { content: "πγ) "; }
+ol._gre-p_ li:nth-child(84):before { content: "πδ) "; }
+ol._gre-p_ li:nth-child(85):before { content: "πε) "; }
+ol._gre-p_ li:nth-child(86):before { content: "πστ) "; }
+ol._gre-p_ li:nth-child(87):before { content: "πζ) "; }
+ol._gre-p_ li:nth-child(88):before { content: "πη) "; }
+ol._gre-p_ li:nth-child(89):before { content: "πθ) "; }
+ol._gre-p_ li:nth-child(90):before { content: "ρ) "; }
+ol._gre-p_ li:nth-child(91):before { content: "ρα) "; }
+ol._gre-p_ li:nth-child(92):before { content: "ρβ) "; }
+ol._gre-p_ li:nth-child(93):before { content: "ργ) "; }
+ol._gre-p_ li:nth-child(94):before { content: "ρδ) "; }
+ol._gre-p_ li:nth-child(95):before { content: "ρε) "; }
+ol._gre-p_ li:nth-child(96):before { content: "ρστ) "; }
+ol._gre-p_ li:nth-child(97):before { content: "ρζ) "; }
+ol._gre-p_ li:nth-child(98):before { content: "ρη) "; }
+ol._gre-p_ li:nth-child(99):before { content: "ρθ) "; }
+ol._gre-p_ li:nth-child(100):before { content: "σ) "; }
