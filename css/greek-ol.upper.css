@@ -1,5 +1,5 @@
 /*!
- * ol classes for upper-greek numbering lists
+ * Greek/Ionic-numbering CSS ruleset on upper-greek <ol> lists
  *
  * Suports lists up to 100 items
  *
@@ -8,17 +8,17 @@
  */
 :root {
 
-    --greek-ol-suffix: ". ";     /** common values:
-        * "´ "  : keraia
-        * ". "  : dot (default)
+    --greek-ol-up-suffix: "´ ";     /** common values:
+        * "´ "  : keraia (default)
+        * ". "  : dot
         * "´. " : keraia + dot
         * "´) " : keraia + parenthesis_close
         * ") "  : parenthesis_close
         */
 
-    --greek-ol-stigma: "ΣΤ";    /** common values:
+    --greek-ol-up-stigma: "ΣΤ";    /** common values:
         * "Ϛ"  : uppercase stigma
-        * "" var(--greek-ol-stigma) : no stigma
+        * "ΣΤ" : no stigma
         */
 }
 ol[style*='list-style-type: upper-greek'] {
@@ -34,302 +34,302 @@ ol[style*='list-style-type: upper-greek'] li:before {
 /** greek 1-100 dot suffixed
  */
 ol[style*='list-style-type: upper-greek'] li:nth-child(1):before {
-    content: "Α" var(--greek-ol-suffix);
+    content: "Α" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(2):before {
-    content: "Β" var(--greek-ol-suffix);
+    content: "Β" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(3):before {
-    content: "Γ" var(--greek-ol-suffix);
+    content: "Γ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(4):before {
-    content: "Δ" var(--greek-ol-suffix);
+    content: "Δ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(5):before {
-    content: "Ε" var(--greek-ol-suffix);
+    content: "Ε" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(6):before {
-    content: var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(7):before {
-    content: "Ζ" var(--greek-ol-suffix);
+    content: "Ζ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(8):before {
-    content: "Η" var(--greek-ol-suffix);
+    content: "Η" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(9):before {
-    content: "Θ" var(--greek-ol-suffix);
+    content: "Θ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(10):before {
-    content: "Ι" var(--greek-ol-suffix);
+    content: "Ι" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(11):before {
-    content: "ΙΑ" var(--greek-ol-suffix);
+    content: "ΙΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(12):before {
-    content: "ΙΒ" var(--greek-ol-suffix);
+    content: "ΙΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(13):before {
-    content: "ΙΓ" var(--greek-ol-suffix);
+    content: "ΙΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(14):before {
-    content: "ΙΔ" var(--greek-ol-suffix);
+    content: "ΙΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(15):before {
-    content: "ΙΕ" var(--greek-ol-suffix);
+    content: "ΙΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(16):before {
-    content: "Ι" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Ι" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(17):before {
-    content: "ΙΖ" var(--greek-ol-suffix);
+    content: "ΙΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(18):before {
-    content: "ΙΗ" var(--greek-ol-suffix);
+    content: "ΙΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(19):before {
-    content: "ΙΘ" var(--greek-ol-suffix);
+    content: "ΙΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(20):before {
-    content: "Κ" var(--greek-ol-suffix);
+    content: "Κ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(21):before {
-    content: "ΚΑ" var(--greek-ol-suffix);
+    content: "ΚΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(22):before {
-    content: "ΚΒ" var(--greek-ol-suffix);
+    content: "ΚΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(23):before {
-    content: "ΚΓ" var(--greek-ol-suffix);
+    content: "ΚΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(24):before {
-    content: "ΚΔ" var(--greek-ol-suffix);
+    content: "ΚΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(25):before {
-    content: "ΚΕ" var(--greek-ol-suffix);
+    content: "ΚΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(26):before {
-    content: "Κ" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Κ" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(27):before {
-    content: "ΚΖ" var(--greek-ol-suffix);
+    content: "ΚΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(28):before {
-    content: "ΚΗ" var(--greek-ol-suffix);
+    content: "ΚΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(29):before {
-    content: "ΚΘ" var(--greek-ol-suffix);
+    content: "ΚΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(30):before {
-    content: "Λ" var(--greek-ol-suffix);
+    content: "Λ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(31):before {
-    content: "ΛΑ" var(--greek-ol-suffix);
+    content: "ΛΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(32):before {
-    content: "ΛΒ" var(--greek-ol-suffix);
+    content: "ΛΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(33):before {
-    content: "ΛΓ" var(--greek-ol-suffix);
+    content: "ΛΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(34):before {
-    content: "ΛΔ" var(--greek-ol-suffix);
+    content: "ΛΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(35):before {
-    content: "ΛΕ" var(--greek-ol-suffix);
+    content: "ΛΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(36):before {
-    content: "Λ" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Λ" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(37):before {
-    content: "ΛΖ" var(--greek-ol-suffix);
+    content: "ΛΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(38):before {
-    content: "ΛΗ" var(--greek-ol-suffix);
+    content: "ΛΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(39):before {
-    content: "ΛΘ" var(--greek-ol-suffix);
+    content: "ΛΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(40):before {
-    content: "Μ" var(--greek-ol-suffix);
+    content: "Μ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(41):before {
-    content: "ΜΑ" var(--greek-ol-suffix);
+    content: "ΜΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(42):before {
-    content: "ΜΒ" var(--greek-ol-suffix);
+    content: "ΜΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(43):before {
-    content: "ΜΓ" var(--greek-ol-suffix);
+    content: "ΜΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(44):before {
-    content: "ΜΔ" var(--greek-ol-suffix);
+    content: "ΜΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(45):before {
-    content: "ΜΕ" var(--greek-ol-suffix);
+    content: "ΜΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(46):before {
-    content: "Μ" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Μ" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(47):before {
-    content: "ΜΖ" var(--greek-ol-suffix);
+    content: "ΜΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(48):before {
-    content: "ΜΗ" var(--greek-ol-suffix);
+    content: "ΜΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(49):before {
-    content: "ΜΘ" var(--greek-ol-suffix);
+    content: "ΜΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(50):before {
-    content: "Ν" var(--greek-ol-suffix);
+    content: "Ν" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(51):before {
-    content: "ΝΑ" var(--greek-ol-suffix);
+    content: "ΝΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(52):before {
-    content: "ΝΒ" var(--greek-ol-suffix);
+    content: "ΝΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(53):before {
-    content: "ΝΓ" var(--greek-ol-suffix);
+    content: "ΝΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(54):before {
-    content: "ΝΔ" var(--greek-ol-suffix);
+    content: "ΝΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(55):before {
-    content: "ΝΕ" var(--greek-ol-suffix);
+    content: "ΝΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(56):before {
-    content: "Ν" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Ν" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(57):before {
-    content: "ΝΖ" var(--greek-ol-suffix);
+    content: "ΝΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(58):before {
-    content: "ΝΗ" var(--greek-ol-suffix);
+    content: "ΝΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(59):before {
-    content: "ΝΘ" var(--greek-ol-suffix);
+    content: "ΝΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(60):before {
-    content: "Ξ" var(--greek-ol-suffix);
+    content: "Ξ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(61):before {
-    content: "ΞΑ" var(--greek-ol-suffix);
+    content: "ΞΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(62):before {
-    content: "ΞΒ" var(--greek-ol-suffix);
+    content: "ΞΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(63):before {
-    content: "ΞΓ" var(--greek-ol-suffix);
+    content: "ΞΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(64):before {
-    content: "ΞΔ" var(--greek-ol-suffix);
+    content: "ΞΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(65):before {
-    content: "ΞΕ" var(--greek-ol-suffix);
+    content: "ΞΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(66):before {
-    content: "Ξ" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Ξ" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(67):before {
-    content: "ΞΖ" var(--greek-ol-suffix);
+    content: "ΞΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(68):before {
-    content: "ΞΗ" var(--greek-ol-suffix);
+    content: "ΞΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(69):before {
-    content: "ΞΘ" var(--greek-ol-suffix);
+    content: "ΞΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(70):before {
-    content: "Ο" var(--greek-ol-suffix);
+    content: "Ο" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(71):before {
-    content: "ΟΑ" var(--greek-ol-suffix);
+    content: "ΟΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(72):before {
-    content: "ΟΒ" var(--greek-ol-suffix);
+    content: "ΟΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(73):before {
-    content: "ΟΓ" var(--greek-ol-suffix);
+    content: "ΟΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(74):before {
-    content: "ΟΔ" var(--greek-ol-suffix);
+    content: "ΟΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(75):before {
-    content: "ΟΕ" var(--greek-ol-suffix);
+    content: "ΟΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(76):before {
-    content: "Ο" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Ο" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(77):before {
-    content: "ΟΖ" var(--greek-ol-suffix);
+    content: "ΟΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(78):before {
-    content: "ΟΗ" var(--greek-ol-suffix);
+    content: "ΟΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(79):before {
-    content: "ΟΘ" var(--greek-ol-suffix);
+    content: "ΟΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(80):before {
-    content: "Π" var(--greek-ol-suffix);
+    content: "Π" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(81):before {
-    content: "ΠΑ" var(--greek-ol-suffix);
+    content: "ΠΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(82):before {
-    content: "ΠΒ" var(--greek-ol-suffix);
+    content: "ΠΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(83):before {
-    content: "ΠΓ" var(--greek-ol-suffix);
+    content: "ΠΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(84):before {
-    content: "ΠΔ" var(--greek-ol-suffix);
+    content: "ΠΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(85):before {
-    content: "ΠΕ" var(--greek-ol-suffix);
+    content: "ΠΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(86):before {
-    content: "Π" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Π" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(87):before {
-    content: "ΠΖ" var(--greek-ol-suffix);
+    content: "ΠΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(88):before {
-    content: "ΠΗ" var(--greek-ol-suffix);
+    content: "ΠΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(89):before {
-    content: "ΠΘ" var(--greek-ol-suffix);
+    content: "ΠΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(90):before {
-    content: "Ϟ" var(--greek-ol-suffix);
+    content: "Ϟ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(91):before {
-    content: "ϞΑ" var(--greek-ol-suffix);
+    content: "ϞΑ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(92):before {
-    content: "ϞΒ" var(--greek-ol-suffix);
+    content: "ϞΒ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(93):before {
-    content: "ϞΓ" var(--greek-ol-suffix);
+    content: "ϞΓ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(94):before {
-    content: "ϞΔ" var(--greek-ol-suffix);
+    content: "ϞΔ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(95):before {
-    content: "ϞΕ" var(--greek-ol-suffix);
+    content: "ϞΕ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(96):before {
-    content: "Ϟ" var(--greek-ol-stigma) var(--greek-ol-suffix);
+    content: "Ϟ" var(--greek-ol-up-stigma) var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(97):before {
-    content: "ϞΖ" var(--greek-ol-suffix);
+    content: "ϞΖ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(98):before {
-    content: "ϞΗ" var(--greek-ol-suffix);
+    content: "ϞΗ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(99):before {
-    content: "ϞΘ" var(--greek-ol-suffix);
+    content: "ϞΘ" var(--greek-ol-up-suffix);
 }
 ol[style*='list-style-type: upper-greek'] li:nth-child(100):before {
-    content: "Ρ" var(--greek-ol-suffix);
+    content: "Ρ" var(--greek-ol-up-suffix);
 }

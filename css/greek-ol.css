@@ -1,5 +1,5 @@
 /*!
- * ol classes for lower-greek numbering lists
+ * Greek/Ionic-numbering CSS ruleset on lower-greek <ol> lists
  *
  * Suports lists up to 100 items
  *
@@ -8,17 +8,17 @@
  */
  :root {
 
-    --greek-ol-suffix: "´. ";   /** common values:
+    --greek-ol-suffix: ". ";   /** common values:
         * "´ "  : keraia
-        * ". "  : dot
-        * "´. " : keraia + dot (default)
+        * ". "  : dot (default)
+        * "´. " : keraia + dot
         * "´) " : keraia + parenthesis_close
         * ") "  : parenthesis_close
         */
 
     --greek-ol-stigma: "στ";    /** common values:
         * "ϛ"  : lowercase-stigma
-        * "" var(--greek-ol-stigma) : no stigma
+        * "στ" : no stigma
         */
 }
 ol[style*='list-style-type: lower-greek'] {

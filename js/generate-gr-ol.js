@@ -11,7 +11,7 @@
  * 
  */
 
-const ionicNumber = (num, stigma = true, lowerCase = true, keraia = true ) => {
+const greekIonicNumber = (num, stigma = true, lowerCase = true, keraia = true ) => {
 
     if (num > 999999)   return false;
     
@@ -63,7 +63,7 @@ const ionicNumber = (num, stigma = true, lowerCase = true, keraia = true ) => {
 };
 
 
-const generateIonicOL = (limit, options) => {
+const generateIonic_OL_Css = (limit, options = {}) => {
 
     if (limit > 999999) {
          attachCss('/*  */\n');
@@ -82,25 +82,39 @@ const generateIonicOL = (limit, options) => {
                 : "[style*='list-style-type: upper-greek']"
             );
         var openStr = options.hasOwnProperty('openStr') ? options.openStr : '';
-        var closeStr = options.hasOwnProperty('closeStr') ? options.closeStr : ')';
-        var marginLeft = options.hasOwnProperty('marginLeft') ? options.marginLeft : 0;
+        var closeStr = options.hasOwnProperty('closeStr') ? options.closeStr : '.';
+        var marginLeft = options.hasOwnProperty('marginLeft') ? options.marginLeft : '-32px';
         var liWidth = options.hasOwnProperty('width') ? options.width : '32px';
 
         // general ol css rules
         // --- -- -- - - -
         var rules = [
+            '/*!',
+            ' * ionic-greek numbering',
+            ' * Licensed under Apache 2.0 (https://github.com/callmepi/greek-ol/blob/main/LICENSE)',
+            ' * ',
+            ' * Auto generated file;',
+            ` * <ol> class selector: ${olClass}`,
+            ' * params: '+ ((stigma) ?'stigma-' :'') + ((keraia) ?'keraia-' :'') + ((lowerCase) ?'lc-' :'UC-') + limit,
+            ` * open: "${openStr}" ; close: "${closeStr}"`,
+            ' */',
+
             `ol${olClass} { list-style-type: none; }`,
 
-            `ol${olClass} li:before {
-                display: inline-block;
-                margin-left: ${marginLeft}; width: ${liWidth};
-            }`
+            `ol${olClass} li:before {`,
+            `    display: inline-block;`,
+            `    margin-left: -${marginLeft}; width: ${liWidth};`,
+            `}`
+
         ].join('\n');
 
         for (i=1 ; i < (limit+1) ; i++ ) {
-            ionicStr = num(i, stigma, lowerCase, keraia);
-            rules += `\nol${olClass} li:nth-child(${i}):before {
-                content: "${openStr}${ionicStr}${closeStr} "; }`
+            ionicStr = greekIonicNumber(i, stigma, lowerCase, keraia);
+            rules += [
+                `\nol${olClass} li:nth-child(${i}):before {`,
+                `   content: "${openStr}${ionicStr}${closeStr}";`,
+                '}'
+            ].join('\n')
         }
 
         attachCss(rules + '\n');
@@ -110,5 +124,11 @@ const generateIonicOL = (limit, options) => {
 const attachCss = (styles) => {
     var styleSheet = document.createElement("style");
     styleSheet.innerText = styles;
+    // console.log(styles);
     document.head.appendChild(styleSheet);
 }
+
+
+// generateIonic_OL_Css(30);
+
+export { generateIonic_OL_Css }

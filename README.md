@@ -27,7 +27,7 @@ The project is under development; Still it is a minimum viable product.
 
 How use it: 
 
-* download the code and copy ```css/gre.css``` to your css|assets folder
-* In your HTML, include a link to the gre.css
+* download the code and copy ```css/*``` files to your css|assets folder
+* In your HTML, include a link to the css file you are going to use;
 * set ```_gre_``` or ```_gre-p_``` as your OL class
 
