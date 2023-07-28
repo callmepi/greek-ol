@@ -72,10 +72,15 @@ const generateIonicOL = (limit, options) => {
 
         // define main parametres
         // --- -- -- - - -
-        var olClass = options.hasOwnProperty('class') ? options.class : '_gre_';
         var stigma = options.hasOwnProperty('stigma') ? options.stigma : true;
         var lowerCase = options.hasOwnProperty('lowerCase') ? options.lowerCase : true;
         var keraia = options.hasOwnProperty('keraia') ? options.keraia : true;
+        var olClass = options.hasOwnProperty('class')
+            ? ('.' + options.class)
+            : ( lowerCase
+                ? "[style*='list-style-type: lower-greek']"
+                : "[style*='list-style-type: upper-greek']"
+            );
         var openStr = options.hasOwnProperty('openStr') ? options.openStr : '';
         var closeStr = options.hasOwnProperty('closeStr') ? options.closeStr : ')';
         var marginLeft = options.hasOwnProperty('marginLeft') ? options.marginLeft : 0;
@@ -83,20 +88,19 @@ const generateIonicOL = (limit, options) => {
 
         // general ol css rules
         // --- -- -- - - -
-        var rules = `
-            ol.${olClass} {
-                list-style-type: none;
-            }
-            ol.${olClass} li:before {
+        var rules = [
+            `ol${olClass} { list-style-type: none; }`,
+
+            `ol${olClass} li:before {
                 display: inline-block;
-                margin-left: ${marginLeft};
-                width: ${liWidth};
-            }
-        `;    
+                margin-left: ${marginLeft}; width: ${liWidth};
+            }`
+        ].join('\n');
 
         for (i=1 ; i < (limit+1) ; i++ ) {
             ionicStr = num(i, stigma, lowerCase, keraia);
-            rules += `\nol.${olClass} li:nth-child(${i}):before { content: "${openStr}${ionicStr}${closeStr} "; }`
+            rules += `\nol${olClass} li:nth-child(${i}):before {
+                content: "${openStr}${ionicStr}${closeStr} "; }`
         }
 
         attachCss(rules + '\n');
